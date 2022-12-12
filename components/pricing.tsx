@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/pricing.module.css';
+import styles from '../styles/Pricing.module.css';
 import { motion } from 'framer-motion';
 
 const initial = { opacity: 0 };

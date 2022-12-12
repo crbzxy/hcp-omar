@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/benefits.module.css';
+import styles from '../styles/Benefits.module.css';
 import { motion } from 'framer-motion';
 const initial = { opacity: 0, y: -20 };
 const animate = { opacity: 1, y: 0 };
@@ -48,7 +48,7 @@ const beneftis = [
     image: 'icon_lock',
   },
   {
-    title: 'Especialidad en Urología',
+    title: 'Especialidad en Urología por',
     description:
       'Universidad Autónoma del Estado de México',
     image: 'icon_lock',

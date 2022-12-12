@@ -7,7 +7,7 @@
 }
 
 .card {
-  @apply border border-slate-200 rounded-lg lg:col-span-4 place-self-center  w-full col-span-12  p-8 text-center lg:text-left bg-white;
+  @apply border border-slate-200 rounded-lg lg:col-span-4 place-self-center  w-full col-span-12  p-8 text-center lg:text-left bg-white col-start-2;
 }
 
 .img {
