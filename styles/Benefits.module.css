@@ -1,13 +1,14 @@
 .title {
-  @apply text-3xl md:text-4xl font-medium text-center col-span-11 text-[#00BCD4];
+  @apply col-span-12 text-3xl md:text-4xl font-medium text-center  text-[#00BCD4];
 }
 
 .description {
-  @apply max-w-lg mx-auto text-center col-span-11 leading-relaxed mb-8;
+  @apply max-w-lg mx-auto text-center col-span-12 leading-relaxed mb-8;
 }
 
 .card {
-  @apply border border-slate-200 rounded-lg lg:col-span-4 place-self-center  w-full col-span-12  p-8 text-center lg:text-left bg-white col-start-2;
+  min-height: 210px;
+  @apply border border-slate-200 rounded-lg lg:col-span-4 col-span-12 place-self-center  w-full  p-5 text-center lg:text-left bg-white col-start-2;
 }
 
 .img {

@@ -42,7 +42,7 @@ export default function Hero() {
             (Próstata, vejiga, riñón, testículo y pene)
           </motion.p>
           <div className={styles.ctaContainer}>
-            <a href='http://'>
+            <a href='#contacto'>
               <motion.button
                 initial={initial}
                 animate={animate}

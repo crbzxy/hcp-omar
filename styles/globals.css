@@ -16,7 +16,7 @@
   }
 
   .section {
-    @apply py-8 px-4 md:px-8 lg:py-16 2xl:py-40 2xl:px-60 mx-auto grid grid-cols-1 gap-4 md:gap-2 lg:grid-cols-12 relative overflow-hidden;
+    @apply py-8 px-8 md:px-8 lg:py-16 2xl:py-40 2xl:px-60 mx-auto grid grid-cols-1 gap-4 md:gap-2 lg:grid-cols-12 relative overflow-hidden;
   }
 
   .appBlurImage {
@@ -34,7 +34,7 @@
   }
 
   * {
-    @apply focus:outline-1 focus:outline-[#00BCD4];
+    @apply focus:outline-1 focus:outline-[#4D9AD2];
   }
 
   h1,
@@ -45,10 +45,10 @@
   h6,
   {
     line-height: 0.3;
-    @apply text-[#00BCD4] font-bold;
+    @apply text-[#4D9AD2] font-bold;
   }
   .title {
-    @apply text-[#00BCD4] font-bold;
+    @apply text-[#4D9AD2] font-bold;
   }
 
   .logoName

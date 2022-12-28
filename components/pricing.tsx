@@ -11,6 +11,7 @@ const data = [
   {
     title: 'de primera vez:',
     price: '900',
+    specs:'Se realiza una historia clínica detallada del paciente',
     featured: true,
   },
   {
@@ -45,8 +46,8 @@ export default function Pricing() {
               viewport={{ once: true }}
               transition={{ delay: 0.5 + index / 10 }}
               className={item.featured ? styles.cardPopular : styles.card}>
-              <div className='p-4 border-b border-slate-200'>
-                <small className={styles.titleSmall}>Consulta {item.title} </small>
+              <div className='p-4 border-b border-slate-200 min-h-[209px]'>
+                <p className={styles.titleSmall}>Consulta {item.title}</p>
                 <p className={styles.pricing}>
                   ${item.price}
                   <small
@@ -55,7 +56,10 @@ export default function Pricing() {
                     }>
                     
                   </small>
+                 
                 </p>
+                <p className={styles.titleSmall}> 
+                {item.specs }</p>
                 {/* <small
                   className={item.featured ? styles.peopleAlt : styles.people}>
                   This package is suitable <br />
@@ -91,7 +95,7 @@ export default function Pricing() {
               </div> */}
               <div className='p-4'>
                 <button className={item.featured ? styles.ctaAlt : styles.cta}>
-                 Solicita ahora
+                Agendar cita
                 </button>
               </div>
             </motion.div>

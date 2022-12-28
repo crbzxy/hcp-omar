@@ -1,106 +1,68 @@
 import React from 'react';
 import Logo from './logo';
 import styles from '../styles/Footer.module.css';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contacto">
       <div>
         <div className={styles.linksWrapper}>
-          <Logo />
+          <p className={styles.lh5}>Contactame</p>
           <ul>
             <li>
-              <a href='#'>About</a>
+              <a
+                className='mr-6'
+                href='https://www.instagram.com/dr.omar.pinon/'>
+                
+                <Image
+                  className='opacity-70'
+                  src='/smartphone.svg'
+                  width={20}
+                  height={20}
+                  alt='smartphone'
+                />
+                <p className='ml-2'>+52 722 4862 582</p>
+              </a>
+            </li>{' '}
+            <li>
+              <a
+                className='mr-6'
+                href='https://www.instagram.com/dr.omar.pinon/'>
+                
+                <Image
+                  className='opacity-70'
+                  src='/email.svg'
+                  width={20}
+                  height={20}
+                  alt='instagram'
+                />
+                <p className='ml-2'>eopinon@gmail.com
+</p>
+              </a>
             </li>
             <li>
-              <a href='#'>Features</a>
-            </li>
-            <li>
-              <a href='#'>Works</a>
-            </li>
-            <li>
-              <a href='#'>Career</a>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.linksWrapper}>
-          <h4>Help</h4>
-          <ul>
-            <li>
-              <a href='#'>Customer Support</a>
-            </li>
-            <li className='py-3'>
-              <a href='#'>Delivery Details</a>
-            </li>
-            <li>
-              <a href='#'>Terms & conditions</a>
-            </li>
-            <li>
-              <a href='#'>Privacy Policy</a>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.linksWrapper}>
-          <h4>Resources</h4>
-          <ul>
-            <li>
-              <a href='#'>Free Ebooks</a>
-            </li>
-            <li>
-              <a href='#'>Development Tutorial</a>
-            </li>
-            <li>
-              <a href='#'>How to - Blog</a>
-            </li>
-            <li>
-              <a href='#'>Youtube Playlist</a>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.linksWrapper}>
-          <h4>Extra Links</h4>
-          <ul>
-            <li>
-              <a href='#'>Customer Support</a>
-            </li>
-            <li>
-              <a href='#'>Delivery Details</a>
-            </li>
-            <li>
-              <a href='#'>Terms & Condtitions</a>
-            </li>
-            <li>
-              <a href='#'>Privacy Policy</a>
+              <a
+                className='mr-6'
+                href='https://www.instagram.com/dr.omar.pinon/'>
+                
+                <Image
+                  className='opacity-70'
+                  src='/instagram.svg'
+                  width={20}
+                  height={20}
+                  alt='instagram'
+                />
+                <p className='ml-2'>Instagram</p>
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div>
-        <div className='flex items-center mb-2'>
-          <a className='mr-6' href='#'>
-            <img className='opacity-70' src='/facebook.svg' alt='facebook' />
-          </a>
-          <a className='mr-6' href='https://www.instagram.com/dr.omar.pinon/'>
-            <img className='opacity-70' src='/instagram.svg' alt='instagram' />
-          </a>
-          <a className='mr-6' href='#'>
-            <img className='opacity-70' src='/twitter.svg' alt='twitter' />
-          </a>
-          <a className='mr-6' href='#'>
-            <img className='opacity-70' src='/github.svg' alt='github' />
-          </a>
-        </div>
-        <a className={styles.footerLinks} href='#'>
-          Privacy Polciy
-        </a>
-        <a className={styles.footerLinks} href='#'>
-          Terms and conditions
-        </a>
-        <a className={styles.footerLinks} href='#'>
-          Support
-        </a>
         <p className={styles.footerCopyright}>
-          Copyright 2022, All Rights Reserved by Tailland
+          Copyright 2022, Dr. Omar Piñón Solís, Urologo, Cédula: 11592559 /
+          8587201
         </p>
       </div>
     </footer>

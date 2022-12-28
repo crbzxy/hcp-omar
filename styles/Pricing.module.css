@@ -22,7 +22,7 @@
 }
 
 .titleSmall {
-  @apply font-bold capitalize;
+  @apply font-bold ;
 }
 
 .pricing {

@@ -1,5 +1,5 @@
 .footer {
-  @apply py-8 px-4 md:px-8 lg:py-16 2xl:px-60 mx-auto relative;
+  @apply    mx-auto relative;
 }
 
 .footer > div:first-child {
@@ -15,17 +15,25 @@
 }
 
 .footerCopyright {
-  @apply text-center lg:text-left lg:ml-auto;
+  @apply w-screen text-center  lg:mx-auto bg-[#4D9AD2] text-white py-4 px-4;
 }
 
 .linksWrapper {
-  @apply col-span-6 xl:col-span-3;
+  @apply col-span-12 mx-auto flex flex-col ;
+}
+.lh5{
+  color: #4D9AD2;
+  @apply font-medium text-4xl mb-6 text-center ;
 }
 
 .linksWrapper > h4 {
   @apply font-medium text-xl mb-6 text-slate-800;
 }
 
-.linksWrapper > ul > li {
-  @apply py-3;
+.linksWrapper > ul > li > a{
+  @apply py-3 px-3 flex ;
+}
+
+.linksWrapper > ul  {
+  @apply flex flex-col lg:flex-row justify-between;
 }

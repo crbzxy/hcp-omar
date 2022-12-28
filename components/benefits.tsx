@@ -48,7 +48,7 @@ const beneftis = [
     image: 'icon_lock',
   },
   {
-    title: 'Especialidad en Urología por',
+    title: 'Especialidad en Urología',
     description:
       'Universidad Autónoma del Estado de México',
     image: 'icon_lock',
@@ -64,10 +64,10 @@ const beneftis = [
 
 export default function Benefits() {
   return (
-    <section className='section bg-gray-100'>
-      <p className={styles.title}>
+    <section className='section bg-white'>
+      <h2 className={styles.title}>
       Certificados
-      </p>
+      </h2>
       <p className={styles.description}>
       Experiencia en múltiples procedimientos en Cáncer urológico
       </p>
@@ -81,9 +81,9 @@ export default function Benefits() {
             viewport={{ once: true }}
             className={styles.card}>
             <div className={styles.img}>
-            
+              <img src={`/${item.image}.svg`} alt={item.title} />
             </div>
-            <h4 className={styles.cardTitle}>{item.title}</h4>
+            <h3 className={styles.cardTitle}>{item.title}</h3>
             <small>{item.description}</small>
           </motion.div>
         );
