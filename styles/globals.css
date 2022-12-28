@@ -16,7 +16,7 @@
   }
 
   .section {
-    @apply py-8 px-4 md:px-8 lg:py-16 2xl:py-40 2xl:px-60 mx-auto grid grid-cols-1 gap-8 lg:grid-cols-12 relative overflow-hidden;
+    @apply py-8 px-4 md:px-8 lg:py-16 2xl:py-40 2xl:px-60 mx-auto grid grid-cols-1 gap-4 md:gap-2 lg:grid-cols-12 relative overflow-hidden;
   }
 
   .appBlurImage {
@@ -42,13 +42,23 @@
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  {
     line-height: 0.3;
     @apply text-[#00BCD4] font-bold;
   }
+  .title {
+    @apply text-[#00BCD4] font-bold;
+  }
+
+  .logoName
+  {
+    @apply text-[#00BCD4] font-bold;
+    line-height: 1;
+  }
 
   body {
-    @apply bg-[#F7FAFC];
+    @apply bg-[#ffffff] !important;
   }
 }
 

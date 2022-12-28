@@ -2,9 +2,10 @@
 
 export default function Logo() {
   return (
-    <div className='mr-16'>
+    <div className='mr-16 flex flex-col '>
     
-<p>Dr. Omar Piñón Solís</p>
+      <p className="logoName">Dr. Omar Piñón Solís</p>
+      <p>Urólogo</p>
     </div>
   );
 }

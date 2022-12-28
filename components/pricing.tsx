@@ -11,32 +11,17 @@ const data = [
   {
     title: 'de primera vez:',
     price: '900',
-    people: '15',
-    disk: '10',
-    support: '1',
-    queries: '500',
-    stats: 'Basic',
-    featured: false,
+    featured: true,
   },
   {
     title: 'subsecuente:',
     price: '800',
-    people: '50',
-    disk: '500',
-    support: '5',
-    queries: '600',
-    stats: 'Basic',
-    featured: false,
+    
   },
   {
     title: 'en línea:',
     price: '700',
-    people: '100',
-    disk: '800',
-    support: '10',
-    queries: '800',
-    stats: 'Full',
-    featured: true,
+    
   },
  
 ];
@@ -44,9 +29,9 @@ const data = [
 export default function Pricing() {
   return (
     <section className='section bg-gray-100'>
-      <h2 className={styles.title}>
-      Consulta
-      </h2>
+      <h5 className={styles.title}>
+     Servicios
+      </h5>
       <p className={styles.description}>
         Encuentra la mejor opción para ti 
       </p>

@@ -65,9 +65,9 @@ const beneftis = [
 export default function Benefits() {
   return (
     <section className='section bg-gray-100'>
-      <h2 className={styles.title}>
+      <p className={styles.title}>
       Certificados
-      </h2>
+      </p>
       <p className={styles.description}>
       Experiencia en múltiples procedimientos en Cáncer urológico
       </p>
@@ -83,7 +83,7 @@ export default function Benefits() {
             <div className={styles.img}>
             
             </div>
-            <h3 className={styles.cardTitle}>{item.title}</h3>
+            <h4 className={styles.cardTitle}>{item.title}</h4>
             <small>{item.description}</small>
           </motion.div>
         );

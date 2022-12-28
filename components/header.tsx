@@ -23,6 +23,9 @@ export default function Header() {
             <a href='#'>Servicios</a>
           </li>
           <li>
+            <a href='#'>Opiniones</a>
+          </li>
+          <li>
             <a href='#'>Publicaciones</a>
           </li>
       

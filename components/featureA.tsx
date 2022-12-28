@@ -8,7 +8,7 @@ const tasks = ['Go to gym', 'Launch Feature A', 'Call Mom', 'Get diapers'];
 
 export default function FeatureA() {
   return (
-    <section  id='sobremi' className='section'>
+    <section  id='sobremi' className='section bg-white'>
       <motion.div
        
         initial={initial}

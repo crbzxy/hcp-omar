@@ -5,24 +5,22 @@ export default function MobileMenu() {
     <div id='mobile-menu' className={styles.mobileMenuWrapper}>
       <ul className={styles.mobileNav}>
         <li>
-          <a href='#'>Demos</a>
+          <a href='#'>Sobre mi</a>
         </li>
         <li>
-          <a href='#'>About</a>
+          <a href='#'>Servicios</a>
         </li>
         <li>
-          <a href='#'>Blog</a>
+          <a href='#'>Opiniones</a>
         </li>
         <li>
-          <a href='#'>Pages</a>
+          <a href='#'>Publicaciones</a>
         </li>
-        <li>
-          <a href='#'>Contact</a>
-        </li>
+
       </ul>
       <div className={styles.mobileHeaderCTA}>
-        <button className='primaryBTN w-full'>Get Started For Free</button>
-        <button className='ghostBTN w-full text-center'>Login</button>
+     <a href="#contacto">   <button className='primaryBTN w-full'>Contacto</button></a>
+        
       </div>
     </div>
   );

@@ -7,7 +7,7 @@
 }
 
 .pricingWrapper {
-  @apply col-span-12 lg:col-span-10 lg:col-start-1 grid grid-cols-3 gap-4;
+  @apply col-span-12 lg:col-span-10 lg:col-start-2 grid grid-cols-3 gap-4;
 }
 
 .cardTemplate {
