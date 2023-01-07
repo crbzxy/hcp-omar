@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 type Props = {
   children?: ReactNode;
@@ -19,17 +20,17 @@ export default function Phone({ children }: Props) {
           {/* <!-- content here --> */}
           <div className='bg-slate-900 w-full h-full'>
             <div className='flex items-center'>
-              <img
+              <Image
                 className='w-8 mt-5 mx-auto text-white'
                 src='/menu.svg'
                 alt='logo'
               />
-              <img
+              <Image
                 className='w-8 mt-5 mx-auto'
-                src='https://tailwindui.com/img/logos/mark.svg?color=white'
+                src='https://tailwindui.com/Image/logos/mark.svg?color=white'
                 alt='logo'
               />
-              <img
+              <Image
                 className='w-8 mt-5 mx-auto text-white'
                 src='/logout.svg'
                 alt='logo'
@@ -39,7 +40,7 @@ export default function Phone({ children }: Props) {
             <div className='rounded-2xl bg-slate-50 mt-4 h-full p-4'>
               <div className='flex justify-between p-1 mb-4 border-b border-slate-300 px-2 pt-4 pb-4'>
                 <p className='text-sm font-medium'>Business Users</p>
-                <img className='w-5 h-5' src='/close.svg' alt='logo' />
+                <Image className='w-5 h-5' src='/close.svg' alt='logo' />
               </div>
               {/* <!-- card --> */}
               {children}
@@ -66,7 +67,7 @@ export default function Phone({ children }: Props) {
           rx='2.5'
           fill='#D4D4D4'></rect>
       </svg>
-      <img
+      <Image
         alt=''
         src='/phone-frame.svg'
         width='366'

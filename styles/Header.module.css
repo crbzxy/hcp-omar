@@ -1,11 +1,17 @@
 .header {
  
+position:absolute;
+top:0;
+z-index:999;
+ margin: 0 auto;
+  width: 100%;
 
-  @apply p-4 lg:py-2 lg:px-0 container mx-auto grid lg:flex lg:justify-between grid-cols-2 text-slate-700;
+  @apply p-4 lg:py-2 lg:px-4 container mx-auto grid lg:flex lg:justify-between grid-cols-2 text-[#879FA8] hover:text-[#00BCD4] ;
 }
 
 .header > nav {
-  @apply flex items-center;
+  position: relative;
+  @apply flex items-center w-full justify-between;
 }
 
 .navCTA {
@@ -17,7 +23,7 @@
 }
 
 .navMenu > li {
-  @apply mr-8;
+  @apply mr-8  ;
 }
 
 .mobileMenuWrapper {

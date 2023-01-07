@@ -7,7 +7,8 @@
 }
 
 .card {
-  min-height: 210px;
+  max-width: 370px;
+  min-height: 200px;
   @apply border border-slate-200 rounded-lg lg:col-span-4 col-span-12 place-self-center  w-full  p-5 text-center lg:text-left bg-white col-start-2;
 }
 
@@ -18,3 +19,5 @@
 .cardTitle {
   @apply text-xl font-medium my-4;
 }
+
+

@@ -37,3 +37,4 @@
 .linksWrapper > ul  {
   @apply flex flex-col lg:flex-row justify-between;
 }
+

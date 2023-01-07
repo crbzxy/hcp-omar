@@ -11,56 +11,49 @@ const data = [
   {
     title: 'de primera vez:',
     price: '900',
-    specs:'Se realiza una historia clínica detallada del paciente',
+    specs: 'Se realiza una historia clínica detallada del paciente',
     featured: true,
   },
   {
-    title: 'subsecuente:',
+    title: 'Consulta subsecuente:',
     price: '800',
-    
+    specs:
+      'Seguimiento a los padecimientos y/o enfermedades a tratar. En caso de ser necesario se comienza con tratamiento',
   },
   {
-    title: 'en línea:',
+    title: 'Consulta en línea:',
     price: '700',
-    
+    specs: 'A travéz de Zoom. Receta electrónica',
   },
- 
 ];
 
 export default function Pricing() {
   return (
-    <section className='section bg-gray-100'>
-      <h5 className={styles.title}>
-     Servicios
-      </h5>
-      <p className={styles.description}>
-        Encuentra la mejor opción para ti 
-      </p>
-      <div className={styles.pricingWrapper}>
-        {data.map((item, index) => {
-          return (
-            <motion.div
-              key={item.title}
-              initial={{ x: -150, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 + index / 10 }}
-              className={item.featured ? styles.cardPopular : styles.card}>
-              <div className='p-4 border-b border-slate-200 min-h-[209px]'>
-                <p className={styles.titleSmall}>Consulta {item.title}</p>
-                <p className={styles.pricing}>
-                  ${item.price}
-                  <small
-                    className={
-                      item.featured ? styles.pricingPmALT : styles.pricingPM
-                    }>
-                    
-                  </small>
-                 
-                </p>
-                <p className={styles.titleSmall}> 
-                {item.specs }</p>
-                {/* <small
+    <>
+      <h5 className={styles.title}>Servicios</h5>
+      <p className={styles.description}>Encuentra la mejor opción para ti</p>
+      <section className='section '>
+        <div className={styles.pricingWrapper}>
+          {data.map((item, index) => {
+            return (
+              <motion.div
+                key={item.title}
+                initial={{ x: -150, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5 + index / 10 }}
+                className={item.featured ? styles.cardPopular : styles.card}>
+                <div className='p-4  border-slate-200 min-h-[209px] flex flex-col justify-around'>
+                  <p className={styles.titleSmall}>Consulta {item.title}</p>
+                  <p className={styles.pricing}>
+                    ${item.price}
+                    <small
+                      className={
+                        item.featured ? styles.pricingPmALT : styles.pricingPM
+                      }></small>
+                  </p>
+                  <p className={styles.titleSmall}>{item.specs}</p>
+                  {/* <small
                   className={item.featured ? styles.peopleAlt : styles.people}>
                   This package is suitable <br />
                   for teams of 1 - {item.people
@@ -68,8 +61,8 @@ export default function Pricing() {
                     : 'Unlimited'}{' '}
                   people
                 </small> */}
-              </div>
-              {/* <div className='p-4'>
+                </div>
+                {/* <div className='p-4'>
                 <ul className={styles.list}>
                   <li>
                     <img src='/check.svg' className='mr-2 w-4' alt='' />{' '}
@@ -93,15 +86,17 @@ export default function Pricing() {
                   </li>
                 </ul>
               </div> */}
-              <div className='p-4'>
-                <button className={item.featured ? styles.ctaAlt : styles.cta}>
-                Agendar cita
-                </button>
-              </div>
-            </motion.div>
-          );
-        })}
-      </div>
-    </section>
+                <div className='p-4 border-t'>
+                  <button
+                    className={item.featured ? styles.ctaAlt : styles.cta}>
+                    Agendar cita
+                  </button>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+      </section>
+    </>
   );
 }

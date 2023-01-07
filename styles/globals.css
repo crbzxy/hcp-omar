@@ -8,7 +8,7 @@
   }
 
   .primaryBTN {
-    @apply focus:outline-[#00BCD4] focus:outline-1 px-4 py-3 bg-[#00BCD4] hover:bg-[#518eaa] hover:cursor-pointer text-white font-medium rounded w-full lg:w-max;
+    @apply focus:outline-[#4D9AD2] focus:outline-1 px-4 py-3 bg-[#4D9AD2] hover:bg-[#518eaa] hover:cursor-pointer text-white font-medium rounded w-full lg:w-max;
   }
 
   .secondaryBTN {
@@ -16,11 +16,20 @@
   }
 
   .section {
-    @apply py-8 px-8 md:px-8 lg:py-16 2xl:py-40 2xl:px-60 mx-auto grid grid-cols-1 gap-4 md:gap-2 lg:grid-cols-12 relative overflow-hidden;
+    
+    min-height: 80vh;
+    height: 100%;
+    @apply grid my-16  py-4 px-8 md:px-8 lg:py-1 2xl:py-4 2xl:px-4 mx-auto  grid-cols-1 gap-2 md:gap-2 lg:grid-cols-12 relative overflow-hidden ;
   }
-
+  .sectionHero {
+    
+    min-height: 80vh;
+    height: 100%;
+    @apply grid my-16  py-4 px-8 md:px-8 lg:py-1 2xl:py-4 2xl:px-4 mx-auto  grid-cols-1 gap-2 md:gap-2 lg:grid-cols-12 relative overflow-hidden ;
+  }
   .appBlurImage {
-    @apply hidden xl:block absolute z-0 right-[9px] top-[13px];
+    @apply  xl:block absolute z-0  ;
+  
   }
 }
 
@@ -52,6 +61,13 @@
   }
 
   .logoName
+  {
+    @apply text-[#4D9AD2] font-bold;
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+
+  .logoNamesub
   {
     @apply text-[#00BCD4] font-bold;
     line-height: 1;
@@ -87,7 +103,7 @@
 .contador__item__numero {
   font-size: 50px;
   font-weight: 700;
-  color: #00bcd4;
+  color: #4D9AD2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +112,7 @@
 .contador__item__numero__num {
   font-size: 50px;
   font-weight: 700;
-  color: #4d9ad2;
+  color: #4D9AD2;
 }
 .contador_titulo {
   font-size: 0.8rem;
@@ -109,4 +125,77 @@
 }
 .heading {
 font-size: 2.5rem;
+}
+
+
+.certificados{
+  background-image: url("../public/dots.png");
+  background-color: #fff;
+  background-repeat:repeat;
+  background-position: center;
+  background-size: fill;
+
+  
+
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentFormacion{
+  width: 100%;
+  border: 1px solid #4D9AD2;
+
+}
+
+.mySwiper{
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.card{
+  margin: 10px;
+  border: 1px solid #4D9AD2;
+}
+
+
+.mySwiperHero{
+  width: 95vw;
+  
+  background-image: url("../public/dots.png");
+  background-color: #fff;
+  background-repeat:repeat;
+  background-position: center;
+  background-size: fill;
 }

@@ -30,13 +30,14 @@ export default function Header() {
           </li>
       
         </ul>
-      </nav>
-      <div className={styles.navCTA}>
+        <div className={styles.navCTA}>
         
         <a href="#contacto">
         <button className='primaryBTN'>Contacto</button>
         </a>
       </div>
+      </nav>
+      
       {/* <!-- mobile menu button --> */}
       <MobileMenuButton menuState={menuState} togMenu={toggleMenu} />
       {/* <!-- mobile menu --> */}

@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Hero />
-      <FeatureA />
+     
       <FeatureB />
       <Benefits /> 
       <Pricing />

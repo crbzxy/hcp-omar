@@ -64,13 +64,14 @@ const beneftis = [
 
 export default function Benefits() {
   return (
-    <section className='section bg-white'>
-      <h2 className={styles.title}>
-      Certificados
-      </h2>
-      <p className={styles.description}>
+    <> <h2 className={styles.title}>
+    Certificados
+    </h2> <p className={styles.description}>
       Experiencia en múltiples procedimientos en Cáncer urológico
       </p>
+     <section className='section certificados'>
+     
+     
       {beneftis?.map((item, index) => {
         return (
           <motion.div
@@ -89,5 +90,7 @@ export default function Benefits() {
         );
       })}
     </section>
+    
+    </>
   );
 }
