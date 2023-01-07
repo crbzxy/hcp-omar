@@ -1,22 +1,21 @@
 import styles from '../styles/Hero.module.css';
 import Image from 'next/image';
-import Phone from './phone';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 // import required modules
-import { Autoplay, Navigation, Pagination } from 'swiper';
+import { Autoplay, Navigation, Pagination, EffectFade } from 'swiper';
 
 const initial = { opacity: 0 };
 const animate = { opacity: 1 };
-const transition_h1 = { delay: 0.2, duration: 0.5 };
-const transition_h2 = { delay: 0.2, duration: 0.5 };
-const transition_P = { delay: 0.3, duration: 0.5 };
-const transition_btn_a = { delay: 0.4, duration: 0.5 };
-const transition_btn_b = { delay: 0.4, duration: 0.5 };
+const transition_h1 = { delay: 0.2, duration: 0.2 };
+const transition_h2 = { delay: 0.2, duration: 0.2 };
+const transition_P = { delay: 0.3, duration: 0.2 };
+const transition_btn_a = { delay: 0.4, duration: 0.2 };
 
 export default function Hero() {
   return (
@@ -24,15 +23,15 @@ export default function Hero() {
       <section className='sectionHero'>
         <Swiper
           navigation={true}
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Pagination, Autoplay, EffectFade]}
           loop={true}
-          
+          effect={'fade'}
           pagination={{
             dynamicBullets: true,
           }}
           autoplay={{
-            delay: 2800,
-            disableOnInteraction: false,
+            delay: 3400,
+            disableOnInteraction: true,
           }}
           className='mySwiperHero'>
           <SwiperSlide>
@@ -92,7 +91,6 @@ export default function Hero() {
               width={1280}
               height={632}
             />
-           
           </SwiperSlide>
           <SwiperSlide>
             <Image
@@ -101,9 +99,7 @@ export default function Hero() {
               width={1280}
               height={632}
             />
-           
           </SwiperSlide>
-          
         </Swiper>
       </section>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/Reviews.module.css';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 export default function Reviews() {
   return (
     <section className='section'>
@@ -76,7 +77,7 @@ export default function Reviews() {
               beatae ea quo obcaecati?&quot;
             </small>
             <div className={styles.reviewCardContentWrapper}>
-              <img
+              <Image
                 className='w-10 h-10 rounded-full block mr-2'
                 src='http://www.placecage.com/250/250'
                 alt='Rounded avatar'
