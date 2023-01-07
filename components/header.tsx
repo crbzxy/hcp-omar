@@ -20,13 +20,13 @@ export default function Header() {
             <a href='#sobremi'>Sobre mi</a>
           </li>
           <li>
-            <a href='#'>Servicios</a>
+            <a href='#servicios'>Servicios</a>
           </li>
           <li>
-            <a href='#'>Opiniones</a>
+            <a href='#opiniones'>Opiniones</a>
           </li>
           <li>
-            <a href='#'>Publicaciones</a>
+            <a href='#publicaciones'>Publicaciones</a>
           </li>
       
         </ul>

@@ -29,7 +29,7 @@ const data = [
 
 export default function Pricing() {
   return (
-    <>
+    <div className='contenido' id='servicios'>
       <h5 className={styles.title}>Servicios</h5>
       <p className={styles.description}>Encuentra la mejor opción para ti</p>
       <section className='section '>
@@ -97,6 +97,6 @@ export default function Pricing() {
           })}
         </div>
       </section>
-    </>
+    </div>
   );
 }

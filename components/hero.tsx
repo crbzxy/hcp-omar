@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import required modules
-import { Navigation, Pagination } from 'swiper';
+import { Autoplay, Navigation, Pagination } from 'swiper';
 
 const initial = { opacity: 0 };
 const animate = { opacity: 1 };
@@ -24,9 +24,15 @@ export default function Hero() {
       <section className='sectionHero'>
         <Swiper
           navigation={true}
-          modules={[Navigation,Pagination]}
+          modules={[Navigation, Pagination, Autoplay]}
+          loop={true}
+          
           pagination={{
             dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2800,
+            disableOnInteraction: false,
           }}
           className='mySwiperHero'>
           <SwiperSlide>
@@ -80,104 +86,22 @@ export default function Hero() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            {' '} <div className={styles.leftDiv}>
-              <Image src='/omar.svg' alt='' width={409} height={639} />
-            </div>
-            <div className={styles.rightDiv}>
-              <motion.p
-                initial={initial}
-                animate={animate}
-                transition={transition_h2}
-                className={styles.content}>
-                <small> Cédula: 11592559 / 8587201</small>
-              </motion.p>
-              <motion.h1
-                initial={initial}
-                animate={animate}
-                transition={transition_h1}
-                className={styles.heading}>
-                Dr. Omar Piñón Solís
-              </motion.h1>
-
-              <motion.h2
-                initial={initial}
-                animate={animate}
-                transition={transition_h2}
-                className={styles.parraf}>
-                Urólogo, Toluca Metepec
-              </motion.h2>
-
-              <motion.p
-                initial={initial}
-                animate={animate}
-                transition={transition_P}
-                className={styles.content}>
-                Experto en diagnóstico y tratamiento del cáncer de urológico
-                (Próstata, vejiga, riñón, testículo y pene)
-              </motion.p>
-              <div className={styles.ctaContainer}>
-                <a href='#contacto'>
-                  <motion.button
-                    initial={initial}
-                    animate={animate}
-                    transition={transition_btn_a}
-                    className='primaryBTN lg:mr-8 mb-4 lg:mb-0'>
-                    Agendar cita
-                  </motion.button>
-                </a>
-              </div>
-            </div>
+            <Image
+              src={'/hero2.jpeg'}
+              alt='Picture of the author'
+              width={1280}
+              height={632}
+            />
            
           </SwiperSlide>
           <SwiperSlide>
-            {' '}
-            <div className={styles.rightDiv}>
-              <motion.p
-                initial={initial}
-                animate={animate}
-                transition={transition_h2}
-                className={styles.content}>
-                <small> Cédula: 11592559 / 8587201</small>
-              </motion.p>
-              <motion.h1
-                initial={initial}
-                animate={animate}
-                transition={transition_h1}
-                className={styles.heading}>
-                Dr. Omar Piñón Solís
-              </motion.h1>
-
-              <motion.h2
-                initial={initial}
-                animate={animate}
-                transition={transition_h2}
-                className={styles.parraf}>
-                Urólogo, Toluca Metepec
-              </motion.h2>
-
-              <motion.p
-                initial={initial}
-                animate={animate}
-                transition={transition_P}
-                className={styles.content}>
-                Experto en diagnóstico y tratamiento del cáncer de urológico
-                (Próstata, vejiga, riñón, testículo y pene)
-              </motion.p>
-              <div className={styles.ctaContainer}>
-                <a href='#contacto'>
-                  <motion.button
-                    initial={initial}
-                    animate={animate}
-                    transition={transition_btn_a}
-                    className='primaryBTN lg:mr-8 mb-4 lg:mb-0'>
-                    Agendar cita
-                  </motion.button>
-                </a>
-              </div>
-            </div>
-            <div className={styles.leftDiv}>
-              <Image src='/omar.svg' alt='' width={409} height={639} />
-            </div>
+            <Image
+              src={'/hero3.jpeg'}
+              alt='Picture of the author'
+              width={1280}
+              height={632}
+            />
+           
           </SwiperSlide>
           
         </Swiper>

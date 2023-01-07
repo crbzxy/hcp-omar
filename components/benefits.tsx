@@ -64,7 +64,8 @@ const beneftis = [
 
 export default function Benefits() {
   return (
-    <> <h2 className={styles.title}>
+    <div className='contenido'>
+      <h2 className={styles.title}>
     Certificados
     </h2> <p className={styles.description}>
       Experiencia en múltiples procedimientos en Cáncer urológico
@@ -91,6 +92,6 @@ export default function Benefits() {
       })}
     </section>
     
-    </>
+    </div>
   );
 }
