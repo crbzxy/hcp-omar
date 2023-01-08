@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from './logo';
 import styles from '../styles/Footer.module.css';
 import Image from 'next/image';
+import HospitalesRender from './hospitales';
 
 export default function Footer() {
   return (
@@ -11,9 +12,10 @@ export default function Footer() {
           <p className={styles.lh5}>Contáctame</p>
           <ul>
             <li>
+             
               <a
                 className='mr-6'
-                href='https://www.instagram.com/dr.omar.pinon/'>
+                href="tel:+52 722 4862 582">
                 
                 <Image
                   className='opacity-70'
@@ -28,7 +30,7 @@ export default function Footer() {
             <li>
               <a
                 className='mr-6'
-                href='https://www.instagram.com/dr.omar.pinon/'>
+                href='mailto:eopinon@gmail.com'>
                 
                 <Image
                   className='opacity-70'
@@ -59,6 +61,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      <HospitalesRender />
       <div>
         <p className={styles.footerCopyright}>
           Copyright 2022, Dr. Omar Piñón Solís, Urologo, Cédula: 11592559 /

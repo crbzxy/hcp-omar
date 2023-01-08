@@ -9,6 +9,7 @@ import Pricing from '../components/pricing';
 import Publications from '../components/publications';
 import Testimonials from '../components/testimonials';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import HospitalesRender from '../components/hospitales';
 const Home: NextPage = () => {
   return (
     <>
@@ -18,10 +19,12 @@ const Home: NextPage = () => {
       <Benefits /> 
       <Pricing />
       <Publications />
-     <Testimonials />
+      <Testimonials />
+      
       {/* 
       <CTA /> */}
       <Footer />
+    
       <FloatingWhatsApp
         phoneNumber="+527224862582"
         accountName="Dr. Omar Piñon Solís"

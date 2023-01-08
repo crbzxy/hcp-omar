@@ -3,7 +3,7 @@
 }
 
 .footer > div:first-child {
-  @apply grid grid-cols-12 gap-8 text-slate-500 py-16;
+  @apply grid grid-cols-12 gap-8 text-slate-500 mt-4 pt-16 pb-1;
 }
 
 .footer > div:last-child {

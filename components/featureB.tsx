@@ -39,7 +39,17 @@ const formacion = [
 ]
 export default function FeatureB() {
   return (
+  
+    <>
+      <h3 className='text-3xl text-center py-8'>Especialidades</h3>
+    <div className="chipContainer  content-around justify-evenly flex w-full ">
+   
+    <div className="basic-chip text-2xl background-blue">Urología</div>
+   
+    <div className="basic-chip text-2xl background-blue">Urología Oncológica</div>
+    <div className="basic-chip text-2xl background-blue">Andrología </div></div>
     <div className='contenido'>
+      
       <h3 className={styles.titulos}>Formación Academica</h3>
 
       <section className='section '>
@@ -84,5 +94,7 @@ export default function FeatureB() {
         </div>
       </section>
     </div>
+    
+    </>
   );
 }

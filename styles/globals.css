@@ -21,7 +21,7 @@
     
     min-height: 80vh;
     height: 100%;
-    @apply grid  mt-6 mx-auto  grid-cols-1 gap-2 md:gap-2 lg:grid-cols-12 relative overflow-hidden  ;
+    @apply grid container mt-6 mx-auto  grid-cols-1 gap-2 md:gap-2 lg:grid-cols-12 relative overflow-hidden  ;
   }
   .sectionHero {
     
@@ -131,13 +131,19 @@ font-size: 2.5rem;
 }
 
 
-.certificados{
+.certificados::before {
+  content: "";
   background-image: url("../public/dots.png");
   background-color: #fff;
   background-repeat:repeat;
   background-position: center;
   background-size: fill;
-
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   
 
 }
@@ -200,3 +206,81 @@ font-size: 2.5rem;
   @apply  pt-36;
 }
 
+.hospitales{
+ max-width: 1120px;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem;
+  @apply  hidden md:block ;
+}
+
+
+.chip-title{
+  padding: 20px 10px;
+  font-size: 14px;
+}
+
+.basic-chip{
+  padding: 5px 10px;
+  border-radius: 50px;
+  display: inline-flex;
+  margin: 5px;
+}
+
+.click-chip, .click-chip-hover{
+  padding: 5px 10px;
+  border-radius: 50px;
+  display: inline-flex;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.click-chip-hover:hover{
+  filter: brightness(85%);
+}
+
+.outline{
+  border: 1.5px solid #cccccc;
+  color: #cccccc;
+  outline: none;
+}
+
+.outline-green{
+  border: 1.5px solid #3a913f;
+  color: #3a913f;
+  outline: none;
+}
+
+.outline-blue{
+  border: 1.5px solid #0074c3;
+  color: #0074c3;
+  outline: none;
+}
+
+.background-grey{
+  background: #dddddd;
+  color: #616161;
+}
+
+.background-green{
+  background: #3a913f;
+  color: #ffffff;
+}
+
+.background-blue{
+  background: #0074c3;
+  color: #ffffff;
+}
+
+.icon{
+  /*background: #bdbdbd;*/
+  color: #616161;
+  margin: 0px 5px 0px -5px;
+  background: #bbbbbb;
+  padding: 2px;
+  border-radius: 50px;
+}
+
+.fa-times, .fa-times-circle{
+  margin: 0px -5px 0px 5px;
+}
