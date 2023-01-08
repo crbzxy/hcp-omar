@@ -43,7 +43,7 @@ const beneftis = [
     image: '9',
   },
   {
-    title: 'Especialidad en Urología',
+    title: 'Especialidad en Urología2',
     description: 'Universidad Autónoma del Estado de México',
     image: '5',
   },
@@ -80,143 +80,110 @@ const features = [
 
 const procedimientos = [
   {
-    "Procedimientos": "Tratamiento para cáncer urológico"
+    Procedimientos: 'Tratamiento para cáncer urológico',
   },
   {
-    "Procedimientos": "Biopsia de próstata"
+    Procedimientos: 'Biopsia de próstata',
   },
   {
-    "Procedimientos": "Cirugía de próstata con láser holmio"
+    Procedimientos: 'Cirugía de próstata con láser holmio',
   },
   {
-    "Procedimientos": "Cirugía de próstata con láser verde"
+    Procedimientos: 'Cirugía de próstata con láser verde',
   },
   {
-    "Procedimientos": "Extracción de cálculos renales con láser"
+    Procedimientos: 'Extracción de cálculos renales con láser',
   },
   {
-    "Procedimientos": "Cirugía de la incurvación del pene"
+    Procedimientos: 'Cirugía de la incurvación del pene',
   },
   {
-    "Procedimientos": "Cirugía de Varicucele"
+    Procedimientos: 'Cirugía de Varicucele',
   },
   {
-    "Procedimientos": "Circuncisión láser CO2 por fimosis"
+    Procedimientos: 'Circuncisión láser CO2 por fimosis',
   },
   {
-    "Procedimientos": "Cirugía laparoscópica de tumores de vías urinarias"
+    Procedimientos: 'Cirugía laparoscópica de tumores de vías urinarias',
   },
   {
-    "Procedimientos": "Alargamiento de penre"
+    Procedimientos: 'Alargamiento de penre',
   },
   {
-    "Procedimientos": "Cirugía testicular"
+    Procedimientos: 'Cirugía testicular',
   },
   {
-    "Procedimientos": "Prótesis testiculares"
+    Procedimientos: 'Prótesis testiculares',
   },
   {
-    "Procedimientos": "Prótesis de pene"
-  }
-]
+    Procedimientos: 'Prótesis de pene',
+  },
+];
 export default function Benefits() {
   return (
     <>
-    <div className='contenido max-w-6xl mx-auto'>
-      <h2 className={styles.title}>Certificados</h2>{' '}
-      <p className={styles.description}>
-        Experiencia en múltiples procedimientos en Cáncer urológico
-      </p>
-      <section className='section certificados '>
-        {beneftis?.map((item, index) => {
-          return (
-            <motion.div
-              key={item.title}
-              initial={initial}
-              whileInView={animate}
-              transition={{ delay: 0.5 + index / 10 }}
-              viewport={{ once: true }}
-              className={styles.card}>
-              <div className={styles.Image}>
-                <Image
-                  width={80}
-                  height={80}
-                  src={`/formacion${item.image}.svg`}
-                  alt={item.title}
-                />
-              </div>
-              <h3 className={styles.cardTitle}>{item.title}</h3>
-              <small>{item.description}</small>
-            </motion.div>
-          );
-        })}
-      </section>
-      <section className="relative">
-    
-{/* Section background (needs .relative class on parent and next sibling elements) */}
-
-<div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-  <div className="py-12 md:py-20">
-
-    {/* Section header */}
-    <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-      <h2 className="h2 mb-4 text-3xl">Procedimientos</h2>
-      <p className="text-xl text-gray-600">Experto en diagnóstico y tratamiento del cáncer de urológico<br/> (Próstata, vejiga, riñón, testículo y pene)</p>
-    </div>
-
-    {/* Items */}
-    <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
-                {
-                  procedimientos.map((item, index) => {
-                    return (
-                      <div key={index} className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-      
-                      <h4 key={index} className="text-l text-center font-bold  tracking-tight mb-1">{ item.Procedimientos}</h4>
-                         
-                    </div>
-                    )
-                  })
-             }
-
-    </div>
-
-  </div>
-</div>
-</section>
-      <div className='bg-white py-8 '>
-        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-          <div className='sm:text-center'>
-           
-            <h3 className='mt-2 text-3xl font-bold tracking-tight sm:text-4xl'>
-            Reconocimientos             </h3>
-          
-          </div>
-
-          <div className='mt-20 max-w-lg sm:mx-auto md:max-w-none'>
-            <div className='grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16'>
-              {features.map((feature) => (
-                <div
-                  key={feature.name}
-                  className='relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row'>
-                  <div className='flex h-12 w-12 items-center justify-center rounded-xl bg-[#4D9AD2] text-white sm:shrink-0'>
-                    <feature.icon className='h-8 w-8' aria-hidden='true' />
-                  </div>
-                  <div className='sm:min-w-0 sm:flex-1'>
-                    <p className='text-lg font-semibold leading-8 text-gray-900'>
-                      {feature.name}
-                    </p>
-                    <p className='mt-2 text-base leading-7 text-gray-600'>
-                      {feature.description}
-                    </p>
-                  </div>
+      <div className='contenido max-w-6xl mx-auto'>
+        <h2 className={styles.title}>Certificados</h2>{' '}
+        <p className={styles.description}>
+          Experiencia en múltiples procedimientos en Cáncer urológico
+        </p>
+        <section className='section certificados '>
+          {beneftis?.map((item, index) => {
+            return (
+              <motion.div
+                key={item.title}
+                initial={initial}
+                whileInView={animate}
+                transition={{ delay: 0.5 + index / 10 }}
+                viewport={{ once: true }}
+                className={styles.card}>
+                <div className={styles.Image}>
+                  <Image
+                    width={80}
+                    height={80}
+                    src={`/formacion${item.image}.svg`}
+                    alt={item.title}
+                  />
                 </div>
-              ))}
+                <h3 className={styles.cardTitle}>{item.title}</h3>
+                <small>{item.description}</small>
+              </motion.div>
+            );
+          })}
+        </section>
+      
+        <div className='bg-white my-8 '>
+          <div className='mx-auto max-w-7xl px-6 py-4 lg:px-8'>
+            <div className='sm:text-center'>
+              <h3 className='mt-2 text-3xl font-bold tracking-tight sm:text-4xl'>
+                Reconocimientos{' '}
+              </h3>
+            </div>
+
+            <div className='mt-20 max-w-lg sm:mx-auto md:max-w-none'>
+              <div className='grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16'>
+                {features.map((feature) => (
+                  <div
+                    key={feature.name}
+                    className='relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row'>
+                    <div className='flex h-12 w-12 items-center justify-center rounded-xl bg-[#4D9AD2] text-white sm:shrink-0'>
+                      <feature.icon className='h-8 w-8' aria-hidden='true' />
+                    </div>
+                    <div className='sm:min-w-0 sm:flex-1'>
+                      <p className='text-lg font-semibold leading-8 text-gray-900'>
+                        {feature.name}
+                      </p>
+                      <p className='mt-2 text-base leading-7 text-gray-600'>
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-    </div>
     </>
   );
 }

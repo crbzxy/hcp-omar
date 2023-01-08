@@ -27,6 +27,48 @@ const data = [
   },
 ];
 
+const procedimientos = [
+  {
+    Procedimientos: 'Tratamiento para cáncer urológico',
+  },
+  {
+    Procedimientos: 'Biopsia de próstata',
+  },
+  {
+    Procedimientos: 'Cirugía de próstata con láser holmio',
+  },
+  {
+    Procedimientos: 'Cirugía de próstata con láser verde',
+  },
+  {
+    Procedimientos: 'Extracción de cálculos renales con láser',
+  },
+  {
+    Procedimientos: 'Cirugía de la incurvación del pene',
+  },
+  {
+    Procedimientos: 'Cirugía de Varicucele',
+  },
+  {
+    Procedimientos: 'Circuncisión láser CO2 por fimosis',
+  },
+  {
+    Procedimientos: 'Cirugía laparoscópica de tumores de vías urinarias',
+  },
+  {
+    Procedimientos: 'Alargamiento de penre',
+  },
+  {
+    Procedimientos: 'Cirugía testicular',
+  },
+  {
+    Procedimientos: 'Prótesis testiculares',
+  },
+  {
+    Procedimientos: 'Prótesis de pene',
+  },
+];
+
 export default function Pricing() {
   return (
     <div className='contenido' id='servicios'>
@@ -92,11 +134,46 @@ export default function Pricing() {
                     Agendar cita
                   </button>
                 </div>
+                
               </motion.div>
             );
           })}
         </div>
       </section>
+
+        <section className='relative'>
+          {/* Section background (needs .relative class on parent and next sibling elements) */}
+
+          <div className='relative max-w-6xl mx-auto px-4 sm:px-6'>
+            <div className=''>
+              {/* Section header */}
+              <div className='max-w-3xl mx-auto text-center  md:pb-20'>
+                <h2 className='h2 mb-4 text-3xl'>Procedimientos</h2>
+                <p className='text-xl text-gray-600'>
+                  Experto en diagnóstico y tratamiento del cáncer de urológico
+                  <br /> (Próstata, vejiga, riñón, testículo y pene)
+                </p>
+              </div>
+
+              {/* Items */}
+              <div className='max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none pb-[70px]'>
+                {procedimientos.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className='relative flex flex-col items-center p-6 bg-white rounded shadow-xl'>
+                      <h4
+                        key={index}
+                        className='text-l text-center font-bold  tracking-tight mb-1'>
+                        {item.Procedimientos}
+                      </h4>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
     </div>
   );
 }
