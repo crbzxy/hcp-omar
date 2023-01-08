@@ -55,7 +55,7 @@
   h5,
   h6,
   {
-    line-height: 0.3;
+    line-height: 1.3;
     @apply text-[#4D9AD2] font-bold;
   }
   .title {
