@@ -43,7 +43,7 @@ const beneftis = [
     image: '9',
   },
   {
-    title: 'Especialidad en Urología2',
+    title: 'Especialidad en Urología ',
     description: 'Universidad Autónoma del Estado de México',
     image: '5',
   },
