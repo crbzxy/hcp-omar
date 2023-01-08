@@ -51,7 +51,7 @@ export default function Publications() {
           <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 sm:gap-y-16 lg:gap-x-8">
             {features.map((feature) => (
               <div key={feature.name} className="border-t border-gray-200 pt-4 flex flex-col">
-                <dt className="font-medium text-gray-900">{feature.name}</dt>
+                <dt className="font-bold text-gray-900">{feature.name}</dt>
                 <dd className="mt-1 text-sm text-gray-500">{feature.media}
                 </dd>
                 <a className="mt-2 text-[#00BCD4]" href={feature.link}>Saber más {'→'} </a>

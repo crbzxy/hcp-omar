@@ -13,7 +13,7 @@
 }
 
 .title {
-  @apply text-3xl xl:text-4xl font-medium text-center lg:text-left;
+  @apply text-3xl xl:text-4xl font-bold text-center lg:text-left;
 }
 
 .content {
@@ -45,11 +45,11 @@
 }
 
 .heading {
-  @apply text-4xl font-medium mb-4 text-[#4D9AD2];
+  @apply text-4xl font-bold mb-4 text-[#4D9AD2];
 }
 
 .titulos{
-  @apply text-center w-full  mx-auto text-4xl font-medium mb-4 text-[#4D9AD2];
+  @apply text-center w-full  mx-auto text-4xl font-bold mb-4 text-[#4D9AD2];
 }
 
 

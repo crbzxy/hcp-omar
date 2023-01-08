@@ -23,11 +23,11 @@
 }
 .lh5{
   color: #4D9AD2;
-  @apply font-medium text-4xl mb-6 text-center ;
+  @apply font-bold text-4xl mb-6 text-center ;
 }
 
 .linksWrapper > h4 {
-  @apply font-medium text-xl mb-6 text-slate-800;
+  @apply font-bold text-xl mb-6 text-slate-800;
 }
 
 .linksWrapper > ul > li > a{

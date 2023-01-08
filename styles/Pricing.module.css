@@ -1,5 +1,5 @@
 .title {
-  @apply text-3xl md:text-4xl font-medium text-center col-span-12 p-0 m-0;
+  @apply text-3xl md:text-4xl font-bold text-center col-span-12 p-0 m-0;
 }
 
 .description {

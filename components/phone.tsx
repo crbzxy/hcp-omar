@@ -39,7 +39,7 @@ export default function Phone({ children }: Props) {
 
             <div className='rounded-2xl bg-slate-50 mt-4 h-full p-4'>
               <div className='flex justify-between p-1 mb-4 border-b border-slate-300 px-2 pt-4 pb-4'>
-                <p className='text-sm font-medium'>Business Users</p>
+                <p className='text-sm font-bold'>Business Users</p>
                 <Image className='w-5 h-5' src='/close.svg' alt='logo' />
               </div>
               {/* <!-- card --> */}

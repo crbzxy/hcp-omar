@@ -122,6 +122,7 @@ const procedimientos = [
 export default function Benefits() {
   return (
     <>
+      
       <div className='contenido max-w-6xl mx-auto'>
         <h2 className={styles.title}>Certificados</h2>{' '}
         <p className={styles.description}>
@@ -184,6 +185,7 @@ export default function Benefits() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }

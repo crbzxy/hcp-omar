@@ -10,34 +10,29 @@
   }
 
   .primaryBTN {
-    @apply focus:outline-[#4D9AD2] focus:outline-1 px-4 py-3 bg-[#4D9AD2] hover:bg-[#518eaa] hover:cursor-pointer text-white font-medium rounded w-full lg:w-max;
+    @apply focus:outline-[#4D9AD2] focus:outline-1 px-4 py-3 bg-[#4D9AD2] hover:bg-[#518eaa] hover:cursor-pointer text-white font-bold rounded w-full lg:w-max;
   }
 
   .secondaryBTN {
-    @apply focus:outline-gray-800 focus:outline-1 px-4 py-3 border border-slate-200 hover:cursor-pointer font-medium rounded inline-flex items-center justify-center w-full lg:w-max;
+    @apply focus:outline-gray-800 focus:outline-1 px-4 py-3 border border-slate-200 hover:cursor-pointer font-bold rounded inline-flex items-center justify-center w-full lg:w-max;
   }
 
   .section {
-    
     min-height: 80vh;
     height: 100%;
-    @apply grid container mt-6 mx-auto  grid-cols-1 gap-2 md:gap-2 lg:grid-cols-12 relative overflow-hidden  ;
+    @apply grid container mt-6 mx-auto  grid-cols-1 gap-2 md:gap-2 lg:grid-cols-12 relative overflow-hidden;
   }
   .sectionHero {
-    
-    
-  
-    @apply  sm:py-16  sm:flex  grid-cols-1 gap-2 md:gap-2 lg:grid-cols-12 relative overflow-hidden ;
+    @apply sm:py-16  sm:flex  grid-cols-1 gap-2 md:gap-2 lg:grid-cols-12 relative overflow-hidden;
   }
   .appBlurImage {
-    @apply  xl:block absolute z-0  ;
-  
+    @apply xl:block absolute z-0;
   }
 }
 
 @layer base {
   a {
-    @apply font-medium hover:text-slate-900;
+    @apply font-bold hover:text-slate-900;
   }
 
   html {
@@ -53,8 +48,7 @@
   h3,
   h4,
   h5,
-  h6,
-  {
+  h6 {
     line-height: 1.3;
     @apply text-[#4D9AD2] font-bold;
   }
@@ -62,16 +56,14 @@
     @apply text-[#4D9AD2] font-bold;
   }
 
-  .logoName
-  {
+  .logoName {
     @apply text-[#4D9AD2] font-bold;
     line-height: 1;
     font-size: 1.5rem;
     min-width: 300px;
   }
 
-  .logoNamesub
-  {
+  .logoNamesub {
     @apply text-[#00BCD4] font-bold;
     line-height: 1;
   }
@@ -93,7 +85,6 @@
   display: flex;
   flex-direction: row;
   margin-top: 20px;
-
 }
 .contador__item {
   display: flex;
@@ -101,12 +92,11 @@
   align-items: flex-start;
   flex-direction: column;
   margin: 20px;
-
 }
 .contador__item__numero {
   font-size: 50px;
   font-weight: 700;
-  color: #4D9AD2;
+  color: #4d9ad2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,40 +105,35 @@
 .contador__item__numero__num {
   font-size: 50px;
   font-weight: 700;
-  color: #4D9AD2;
+  color: #4d9ad2;
 }
 .contador_titulo {
   font-size: 0.8rem;
   font-weight: 400;
-  color: #6D6D6D;
+  color: #6d6d6d;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .heading {
-font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
-
 .certificados::before {
-  content: "";
-  background-image: url("../public/dots.png");
+  content: '';
+  background-image: url('../public/dots.png');
   background-color: #fff;
-  background-repeat:repeat;
+  background-repeat: repeat;
   background-position: center;
   background-size: fill;
- position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  
-
 }
-
-
 
 .swiper-slide {
   text-align: left;
@@ -177,57 +162,53 @@ font-size: 2.5rem;
   object-fit: cover;
 }
 
-.contentFormacion{
+.contentFormacion {
   width: 100%;
-  border: 1px solid #4D9AD2;
-
+  border: 1px solid #4d9ad2;
 }
 
-.mySwiper{
+.mySwiper {
   width: 100%;
   height: 100%;
-
 }
 
-
-.card{
+.card {
   margin: 10px;
-  border: 1px solid #4D9AD2;
+  border: 1px solid #4d9ad2;
 }
 
-
-.mySwiperHero{
+.mySwiperHero {
   width: 95vw;
   padding: 1rem;
- @apply  hidden md:block ;
+  @apply hidden md:block;
 }
 
-.contenido{
-  @apply  pt-36;
+.contenido {
+  @apply pt-36;
 }
 
-.hospitales{
- max-width: 1120px;
+.hospitales {
+  max-width: 1120px;
   height: auto;
   margin: 0 auto;
   padding: 1rem;
-  @apply  hidden md:block ;
+  @apply hidden md:block;
 }
 
-
-.chip-title{
+.chip-title {
   padding: 20px 10px;
   font-size: 14px;
 }
 
-.basic-chip{
+.basic-chip {
   padding: 5px 10px;
   border-radius: 50px;
   display: inline-flex;
   margin: 5px;
 }
 
-.click-chip, .click-chip-hover{
+.click-chip,
+.click-chip-hover {
   padding: 5px 10px;
   border-radius: 50px;
   display: inline-flex;
@@ -235,44 +216,44 @@ font-size: 2.5rem;
   cursor: pointer;
 }
 
-.click-chip-hover:hover{
+.click-chip-hover:hover {
   filter: brightness(85%);
 }
 
-.outline{
+.outline {
   border: 1.5px solid #cccccc;
   color: #cccccc;
   outline: none;
 }
 
-.outline-green{
+.outline-green {
   border: 1.5px solid #3a913f;
   color: #3a913f;
   outline: none;
 }
 
-.outline-blue{
+.outline-blue {
   border: 1.5px solid #0074c3;
   color: #0074c3;
   outline: none;
 }
 
-.background-grey{
+.background-grey {
   background: #dddddd;
   color: #616161;
 }
 
-.background-green{
+.background-green {
   background: #3a913f;
   color: #ffffff;
 }
 
-.background-blue{
+.background-blue {
   background: #0074c3;
   color: #ffffff;
 }
 
-.icon{
+.icon {
   /*background: #bdbdbd;*/
   color: #616161;
   margin: 0px 5px 0px -5px;
@@ -281,15 +262,17 @@ font-size: 2.5rem;
   border-radius: 50px;
 }
 
-.fa-times, .fa-times-circle{
+.fa-times,
+.fa-times-circle {
   margin: 0px -5px 0px 5px;
 }
 
-#tsparticles{
+#tsparticles {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
+  background-color: #dfeffc;
 }
