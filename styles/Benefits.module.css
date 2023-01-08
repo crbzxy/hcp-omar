@@ -1,5 +1,5 @@
 .title {
-  @apply col-span-12 text-3xl md:text-4xl font-medium text-center  text-[#00BCD4];
+  @apply col-span-12 text-3xl md:text-4xl font-medium text-center  text-[#4D9AD2];
 }
 
 .description {

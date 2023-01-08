@@ -11,7 +11,7 @@
 }
 
 .content {
-  @apply  max-w-lg mx-auto lg:mx-0 my-4 text-center lg:text-left;
+  @apply  max-w-lg mx-auto lg:mx-0 my-4 text-left lg:text-left;
 }
 
 .ctaContainer {
@@ -56,4 +56,10 @@
 .parraf{
   
   @apply text-3xl ;
+}
+
+.heroMovile{
+  width: 95vw;
+  padding: 1rem;
+ @apply  block md:hidden ;
 }

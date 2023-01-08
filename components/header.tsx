@@ -22,22 +22,21 @@ export default function Header() {
           <li>
             <a href='#servicios'>Servicios</a>
           </li>
-          <li>
-            <a href='#opiniones'>Opiniones</a>
-          </li>
+
           <li>
             <a href='#publicaciones'>Publicaciones</a>
           </li>
-      
+          <li>
+            <a href='#opiniones'>Opiniones</a>
+          </li>
         </ul>
         <div className={styles.navCTA}>
-        
-        <a href="#contacto">
-        <button className='primaryBTN'>Contacto</button>
-        </a>
-      </div>
+          <a href='#contacto'>
+            <button className='primaryBTN'>Contacto</button>
+          </a>
+        </div>
       </nav>
-      
+
       {/* <!-- mobile menu button --> */}
       <MobileMenuButton menuState={menuState} togMenu={toggleMenu} />
       {/* <!-- mobile menu --> */}

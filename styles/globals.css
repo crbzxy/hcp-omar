@@ -193,9 +193,10 @@ font-size: 2.5rem;
 .mySwiperHero{
   width: 95vw;
   padding: 1rem;
- 
+ @apply  hidden md:block ;
 }
 
 .contenido{
   @apply  pt-36;
 }
+

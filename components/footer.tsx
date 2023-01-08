@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className={styles.footer} id="contacto">
       <div>
         <div className={styles.linksWrapper}>
-          <p className={styles.lh5}>Contactame</p>
+          <p className={styles.lh5}>Contáctame</p>
           <ul>
             <li>
               <a

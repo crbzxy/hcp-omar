@@ -35,7 +35,7 @@ export default function FeatureA() {
         </p>
        
 
-        <button className='primaryBTN lg:mr-8 mb-4 lg:mb-0'>Contactame</button>
+        <button className='primaryBTN lg:mr-8 mb-4 lg:mb-0'>Contáctame</button>
       </motion.div>
       <div className={styles.imageWrapper}>
         <div className='appBlurImage'>
