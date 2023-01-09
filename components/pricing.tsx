@@ -15,13 +15,13 @@ const data = [
     featured: true,
   },
   {
-    title: 'Consulta subsecuente:',
+    title: 'subsecuente:',
     price: '800',
     specs:
       'Seguimiento a los padecimientos y/o enfermedades a tratar. En caso de ser necesario se comienza con tratamiento',
   },
   {
-    title: 'Consulta en línea:',
+    title: 'en línea:',
     price: '700',
     specs: 'A travéz de Zoom. Receta electrónica',
   },
