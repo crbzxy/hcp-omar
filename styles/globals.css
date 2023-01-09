@@ -174,7 +174,7 @@
 
 .card {
   margin: 10px;
-  border: 1px solid #4d9ad2;
+  @apply shadow-sm;
 }
 
 .mySwiperHero {

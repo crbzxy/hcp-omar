@@ -161,7 +161,7 @@ export default function Pricing() {
                   return (
                     <div
                       key={index}
-                      className='relative flex flex-col items-center p-6 bg-white rounded shadow-xl'>
+                      className='relative flex flex-col items-center p-6 bg-white rounded shadow-sm'>
                       <h4
                         key={index}
                         className='text-l text-center font-bold  tracking-tight mb-1'>

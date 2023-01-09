@@ -22,7 +22,6 @@ export default function Hero() {
     <>
       <section className='sectionHero'>
         <Swiper
-          
           navigation={true}
           modules={[Navigation, Pagination, Autoplay, EffectFade]}
           loop={true}
@@ -103,53 +102,53 @@ export default function Hero() {
           </SwiperSlide>
         </Swiper>
         <div className={styles.heroMovile}>
-        <div className={styles.rightDiv}>
-              <motion.p
-                initial={initial}
-                animate={animate}
-                transition={transition_h2}
-                className={styles.content}>
-                <small> Cédula: 11592559 / 8587201</small>
-              </motion.p>
-              <motion.h1
-                initial={initial}
-                animate={animate}
-                transition={transition_h1}
-                className={styles.heading}>
-                Dr. Omar Piñón Solís
-              </motion.h1>
+          <div className={styles.rightDiv}>
+            <motion.p
+              initial={initial}
+              animate={animate}
+              transition={transition_h2}
+              className={styles.content}>
+              <small> Cédula: 11592559 / 8587201</small>
+            </motion.p>
+            <motion.h1
+              initial={initial}
+              animate={animate}
+              transition={transition_h1}
+              className={styles.heading}>
+              Dr. Omar Piñón Solís
+            </motion.h1>
 
-              <motion.h2
-                initial={initial}
-                animate={animate}
-                transition={transition_h2}
-                className={styles.parraf}>
-                Urólogo, Toluca Metepec
-              </motion.h2>
+            <motion.h2
+              initial={initial}
+              animate={animate}
+              transition={transition_h2}
+              className={styles.parraf}>
+              Urólogo, Toluca Metepec
+            </motion.h2>
 
-              <motion.p
-                initial={initial}
-                animate={animate}
-                transition={transition_P}
-                className={styles.content}>
-                Experto en diagnóstico y tratamiento del cáncer de urológico
-                (Próstata, vejiga, riñón, testículo y pene)
-              </motion.p>
-              <div className={styles.ctaContainer}>
-                <a href='#contacto'>
-                  <motion.button
-                    initial={initial}
-                    animate={animate}
-                    transition={transition_btn_a}
-                    className='primaryBTN lg:mr-8 mb-4 lg:mb-0'>
-                    Agendar cita
-                  </motion.button>
-                </a>
-              </div>
+            <motion.p
+              initial={initial}
+              animate={animate}
+              transition={transition_P}
+              className={styles.content}>
+              Experto en diagnóstico y tratamiento del cáncer de urológico
+              (Próstata, vejiga, riñón, testículo y pene)
+            </motion.p>
+            <div className={styles.ctaContainer}>
+              <a href='#contacto'>
+                <motion.button
+                  initial={initial}
+                  animate={animate}
+                  transition={transition_btn_a}
+                  className='primaryBTN lg:mr-8 mb-4 lg:mb-0'>
+                  Agendar cita
+                </motion.button>
+              </a>
             </div>
-            <div className={styles.leftDiv}>
-              <Image src='/omar.svg' alt='' width={409} height={639} />
-            </div>
+          </div>
+          <div className={styles.leftDiv}>
+            <Image src='/omar.svg' alt='' width={409} height={639} />
+          </div>
         </div>
       </section>
 

@@ -5,12 +5,12 @@ const Hospitales = () => {
   return (
     <>
       <div className='flex flex-wrap hospitales'>
-        <h4 className='text-4xl'>Hospitales</h4>
+        <h4 className='text-4xl mb-2'>Hospitales</h4>
         <div className='container flex justify-center content-center'>
           <ul
             className='flex mb-0 list-none flex-col  h-full justify-center align-middle'
             role='tablist'>
-            <li className=' mb-1 mr-2 last:mr-0 flex-auto text-center'>
+            <li className=' mb-3 mr-4 last:mr-0 flex-auto text-center'>
               <a
                 className={
                   'text-xs text-left  font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal max-w-[300px] ' +
@@ -32,7 +32,7 @@ const Hospitales = () => {
                 </small>
               </a>
             </li>
-            <li className='mb-1 mr-2 last:mr-0 flex-auto text-center'>
+            <li className='mb-3 mr-4 last:mr-0 flex-auto text-center'>
               <a
                 className={
                   'text-xs text-left  font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal max-w-[300px] ' +
@@ -55,10 +55,10 @@ const Hospitales = () => {
                 </small>
               </a>
             </li>
-            <li className='mb-1 mr-2 last:mr-0 flex-auto text-center'>
+            <li className='mb-3 mr-4 last:mr-0 flex-auto text-center'>
               <a
                 className={
-                  'text-xs text-left font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal max-w-[300px] ' +
+                  'text-xs text-left font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal max-w-[230px] ' +
                   (openTab === 3
                     ? 'text-white bg-' + '[#4D9AD2]'
                     : 'text-' + '[#4D9AD2]' + ' bg-white')

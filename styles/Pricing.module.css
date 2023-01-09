@@ -11,7 +11,7 @@
 }
 
 .cardTemplate {
-  @apply col-span-4 md:col-span-2 xl:col-span-1 p-4  rounded-lg border border-slate-200  max-h-[400px] flex flex-col justify-between;
+  @apply col-span-4 md:col-span-2 xl:col-span-1 p-4  rounded-lg shadow-sm border-slate-200  max-h-[400px] flex flex-col justify-between;
 }
 .card {
   @apply cardTemplate bg-white;
@@ -54,7 +54,7 @@
 }
 
 .cta {
-  @apply px-4 py-3 border bg-white rounded border-slate-400 text-center w-full hover:border-none hover:text-white hover:bg-[#00BCD4];
+  @apply px-4 py-3 shadow-sm bg-white rounded border-slate-400 text-center w-full hover:border-none hover:text-white hover:bg-[#00BCD4];
 }
 
 .ctaAlt {

@@ -5,18 +5,16 @@ import Image from 'next/image';
 import HospitalesRender from './hospitales';
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className={styles.footer} id="contacto">
+    <footer className={styles.footer} id='contacto'>
       <div>
         <div className={styles.linksWrapper}>
           <p className={styles.lh5}>Contáctame</p>
           <ul>
             <li>
-             
-              <a
-                className='mr-6'
-                href="tel:+52 722 4862 582">
-                
+              <a className='mr-6' href='tel:+52 722 4862 582'>
                 <Image
                   className='opacity-70'
                   src='/smartphone.svg'
@@ -28,10 +26,7 @@ export default function Footer() {
               </a>
             </li>{' '}
             <li>
-              <a
-                className='mr-6'
-                href='mailto:eopinon@gmail.com'>
-                
+              <a className='mr-6' href='mailto:eopinon@gmail.com'>
                 <Image
                   className='opacity-70'
                   src='/email.svg'
@@ -39,15 +34,13 @@ export default function Footer() {
                   height={20}
                   alt='instagram'
                 />
-                <p className='ml-2'>eopinon@gmail.com
-</p>
+                <p className='ml-2'>eopinon@gmail.com</p>
               </a>
             </li>
             <li>
               <a
                 className='mr-6'
                 href='https://www.instagram.com/dr.omar.pinon/'>
-                
                 <Image
                   className='opacity-70'
                   src='/instagram.svg'
@@ -64,7 +57,7 @@ export default function Footer() {
       <HospitalesRender />
       <div>
         <p className={styles.footerCopyright}>
-          Copyright 2022, Dr. Omar Piñón Solís, Urologo, Cédula: 11592559 /
+          Copyright {year}, Dr. Omar Piñón Solís, Urologo, Cédula: 11592559 /
           8587201
         </p>
       </div>

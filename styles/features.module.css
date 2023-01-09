@@ -33,15 +33,15 @@
 }
 
 .cardA {
-  @apply z-10 bg-white p-4 rounded-lg shadow-xl xl:col-start-4 col-span-12 sm:col-span-6 row-span-4 relative;
+  @apply z-10 bg-white p-4 rounded-lg shadow-sm xl:col-start-4 col-span-12 sm:col-span-6 row-span-4 relative;
 }
 
 .cardB {
-  @apply z-10 bg-white p-4 rounded-lg shadow-xl xl:col-start-10 col-span-12 sm:col-span-6 row-span-3 row-start-3 relative;
+  @apply z-10 bg-white p-4 rounded-lg shadow-sm xl:col-start-10 col-span-12 sm:col-span-6 row-span-3 row-start-3 relative;
 }
 
 .cardC {
-  @apply hidden xl:block z-10 bg-white p-4 rounded-lg shadow-xl col-start-5 col-span-5 row-span-3 row-start-5 relative;
+  @apply hidden xl:block z-10 bg-white p-4 rounded-lg shadow-sm col-start-5 col-span-5 row-span-3 row-start-5 relative;
 }
 
 .heading {
