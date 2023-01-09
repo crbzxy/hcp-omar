@@ -129,10 +129,10 @@ export default function Pricing() {
                 </ul>
               </div> */}
                 <div className='p-4 border-t'>
-                  <button
+                 <a href="#contacto"> <button
                     className={item.featured ? styles.ctaAlt : styles.cta}>
                     Agendar cita
-                  </button>
+                  </button></a>
                 </div>
                 
               </motion.div>
