@@ -23,7 +23,7 @@ const data = [
   {
     title: 'en línea:',
     price: '700',
-    specs: 'A travéz de Zoom. Receta electrónica',
+    specs: 'a través de Zoom. Receta electrónica',
   },
 ];
 

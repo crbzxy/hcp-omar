@@ -43,7 +43,7 @@ const formacion = [
 export default function FeatureB() {
   return (
     <>
-      <h3 id='sobremi' className='text-3xl text-center py-8'>Especialidades</h3>
+      <h3 id='sobremi' className='text-3xl text-center py-10'>Especialidades</h3>
       <div className='chipContainer  content-around justify-evenly flex w-full '>
         <div className='basic-chip text-2xl background-blue'>Urología</div>
 
@@ -58,7 +58,7 @@ export default function FeatureB() {
         <section className='section '>
           <div className={styles.featureBImageWrapper}>
             <div className='appBlurImage'>
-              <Image src='/formacion.svg' alt='' width={800} height={800} />
+              <Image src='/formacion.svg' alt='' width={600} height={600}  className="m-4"/>
             </div>
           </div>
 

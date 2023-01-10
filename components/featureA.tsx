@@ -38,10 +38,8 @@ export default function FeatureA() {
        <a href="#contacto"> <button className='primaryBTN lg:mr-8 mb-4 lg:mb-0'>Contáctame</button></a>
       </motion.div>
       <div className={styles.imageWrapper}>
-        <div className='appBlurImage'>
-          <Image src='/app_bg.svg' alt='' width={800} height={800} />
-        </div>
-        <Image src='/omarhcp.svg' alt='' width={800} height={800} />
+        
+        <Image src='/omarhcp.svg' alt='' width={600} height={600} className={ styles.imo} />
       </div>
     </section>
   );

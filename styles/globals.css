@@ -26,7 +26,7 @@
     @apply sm:py-16  sm:flex  grid-cols-1 gap-2 md:gap-2 lg:grid-cols-12 relative overflow-hidden;
   }
   .appBlurImage {
-    @apply xl:block absolute z-0;
+    @apply xl:block absolute z-0 p-5;
   }
 }
 
